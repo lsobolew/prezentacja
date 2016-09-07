@@ -1,0 +1,1 @@
+Image decode. Keszowane ale za pierwszym razem bardzo kosztowne.

@@ -1,0 +1,1 @@
+Chrome renderuje kilka rzędów "płytek" naprzód;

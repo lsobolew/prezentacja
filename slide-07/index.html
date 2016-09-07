@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+        <style>
+            section {
+                height: 40px;
+                width: 1300px;
+                padding: 5px 0;
+                margin: auto;
+                position: relative;
+                background: 
+                radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 50px 0,
+                radial-gradient(circle at 50% 41%, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 50px 0,
+                radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 0 50px,
+                radial-gradient(circle at 50% 41%, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 0 50px,
+                radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210,202,171,0) 17%),
+                radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54,78,39,0) 17%),
+                radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210,202,171,0) 17%) 50px 50px,
+                radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54,78,39,0) 17%) 50px 50px;
+                background-color:#63773F;
+                background-size:100px 100px;
+                padding: 10px 0px;
+                text-align: center;
+            }
+            .spinner {
+              width: 40px;
+              height: 40px;
+              display: inline-block;
+              background-color: #333;
+              animation: sk-rotateplane 1.2s infinite ease-in-out;
+            }
+
+            @keyframes sk-rotateplane {
+              0% { 
+                transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+              } 50% { 
+                transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+              } 100% { 
+                transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+              }
+            }
+        </style>
+    </head>
+    <body style="margin:0; padding: 0;">
+        <section><div class="spinner"></div></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+Tworząc stronę celujemy w styl "limited animation"

@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color:#b03;
+                background-size:100px 100px;
+                background-image: url(../pooh03sm.jpg);
+            }
+            #character {
+                margin-top: 30px;
+                margin-left: 30px;
+                width: 200px;
+                height: 200px;
+                border: 4px solid pink;
+                background: radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+                            radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px), #8a3;
+                background-size: 20px 20px;
+                border-radius: 40px;
+                box-sizing: border-box;
+            }
+            #character2 {
+                margin-top: -80px;
+                margin-left: 150px;
+                width: 200px;
+                height: 200px;
+                border: 4px solid pink;
+                border-radius: 40px;
+                box-sizing: border-box;
+                background-color:white;
+                background-image:
+                radial-gradient(midnightblue 9px, transparent 10px),        
+                repeating-radial-gradient(midnightblue 0, midnightblue 4px, transparent 5px, transparent 20px, midnightblue 21px, midnightblue 25px, transparent 26px, transparent 50px);    
+                background-size: 30px 30px, 90px 90px; 
+                background-position: 0 0;
+            }
+            #character2:hover {
+                margin-top:-70px;    
+            }
+            #character3 {
+                margin-top: -80px;
+                margin-left: 270px;
+                width: 200px;
+                height: 200px;
+                border: 4px solid pink;
+                border-radius: 40px;
+                box-sizing: border-box;
+                background: 
+                radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 50px 0,
+                radial-gradient(circle at 50% 41%, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 50px 0,
+                radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 0 50px,
+                radial-gradient(circle at 50% 41%, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 0 50px,
+                radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210,202,171,0) 17%),
+                radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54,78,39,0) 17%),
+                radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210,202,171,0) 17%) 50px 50px,
+                radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54,78,39,0) 17%) 50px 50px;
+                background-color:#63773F;
+                background-size:100px 100px;
+            }
+        </style>
+    </head>
+    <body style="margin:0; padding: 0;">
+        <div class="scene">
+            <div id="character">
+                
+            </div>
+            
+            <div id="character2">
+                
+            </div>
+            
+            <div id="character3">
+                
+            </div>
+        </div>
+        <script>
+            // setTimeout(function(){document.querySelector('div').style.visibility = 'visible'}, 3000);
+        </script>
+    </body>
+</html>
