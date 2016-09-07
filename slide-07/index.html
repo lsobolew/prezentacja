@@ -22,28 +22,40 @@
                 background-size:100px 100px;
                 padding: 10px 0px;
                 text-align: center;
+                background-clip: content-box;
+                margin-top: 10px;
             }
-            .spinner {
+            #spinner {
               width: 40px;
               height: 40px;
               display: inline-block;
               background-color: #333;
-              animation: sk-rotateplane 1.2s infinite ease-in-out;
+              /*animation: godown 10s infinite ease-in-out;*/
+              /*animation: goright 10s infinite ease-in-out;*/
+              /*will-change: transform;*/
+              /*transform: translateY(200px);*/
             }
 
-            @keyframes sk-rotateplane {
+            @keyframes godown {
               0% { 
-                transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-              } 50% { 
-                transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                transform: translateY(0);
               } 100% { 
-                transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                transform: translateY(1000px);
+              }
+            }
+            @keyframes goright {
+              0% { 
+                transform: translateX(0);
+              } 100% { 
+                transform: translateX(100px);
               }
             }
         </style>
     </head>
     <body style="margin:0; padding: 0;">
-        <section><div class="spinner"></div></section>
+        <div id="spinner"></div>
+        
+        <section></section>
         <section></section>
         <section></section>
         <section></section>
@@ -53,4 +65,27 @@
         <section></section>
         <section></section>
     </body>
+    
+    <!-- var start = 0;
+    var element = document.getElementById("spinner");
+    element.style.willChange = 'transform';
+
+    function step(timestamp) {
+      element.style.transform = 'translateY(' + start++ + 'px)';
+      window.requestAnimationFrame(step);
+    }
+
+    window.requestAnimationFrame(step); -->
+    
+    <!-- ------------------- -->
+    
+    <!-- var start = 0;
+    var element = document.getElementById("spinner");
+    element.style.willChange = 'transform';
+
+    setInterval(function(){
+        element.style.transform = 'translateY(' + start++ + 'px)';
+    }, 100)
+      
+       -->
 </html>
