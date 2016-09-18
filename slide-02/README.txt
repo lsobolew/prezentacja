@@ -26,8 +26,8 @@ W przeciwieństwie do tradycyjnej animacji gdzie każda pani dostaje całą klat
 Przeglądarki dzielą każdą warstwę (jedną "kartkę" celuloidu) na płytki (tiles) i każda pani dostaje jedną część. 
 Liczbę pań mamy ograniczoną a dzięki podziałowi na płytki możemy wcześniej zacząć cokolwiek wyświetlać na ekranie.  
 Możecie sobie wyobrazić, że te cztery panie dzielą warstwę celuloidu na 4 części, siedzą na około i malują wszystkie na raz.
-Trwa to dłużej ale wyobraźcie sobie teraz element o wysokości 2 ekranów. Dzięki podziałowi na płytki przeglądarka może 
-wyrenderować tylko widoczną część. 
+Trwa to dłużej ale dzięki temu przeglądarka nie musi renderować całej strony (oszczędność pamięci) oraz podejrzewam,
+że dla dużych elementów przy podziale na płytki można już zyskać na czasie.
 
 
 Tiles 512x512 a 256 na retinie. Czy ma sens optymalizacja? Inne sposoby na optymalizację później.
