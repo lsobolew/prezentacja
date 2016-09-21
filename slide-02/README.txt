@@ -13,7 +13,7 @@ Co może utrudnić pracę artyście?
 - ale też ich skomplikowanie (np. box-shadow)
 Dlaczego musimy na niego uważać i pilnować, żeby działał jak najszybciej?
 ....
-Najporściej: blokuje innych. Nie tylko piękne panie. Pracuje w "main thread"
+Najporściej: blokuje innych. Nie tylko piękne panie. Pracuje w "main thread" a tam mamy do dyspozycji tylko 16ms
 
 Co utrudnia pracę paniom?
 - bardziej skomplikowanie styli niż ich ilość. np. "duuuży box-shadow"
