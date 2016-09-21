@@ -2,27 +2,36 @@
 <html>
     <head>
         <style>
+            body {
+                background-color:#269;
+                background-image: linear-gradient(white 2px, transparent 2px),
+                linear-gradient(90deg, white 2px, transparent 2px),
+                linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+                background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+                background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+            }
             #predecode {
                 display: none;
                 position: absolute;
                 left: 0px;
                 top: 0px;
-                width: 200px;
+                width: 1200px;
                 height: 1px;
-                background: #00afec url(bg.jpg);
+                background: #00afec url(bg2.jpg);
                 opacity: 0.01;
             }
             #character {
                 position: absolute;
-                left: 513px;
+                left: 0px;
                 top: 2513px;
-                width: 200px;
-                height: 200px;
-                background: #00afec url(bg.jpg);
+                width: 1200px;
+                height: 800px;
+                background: #00afec url(bg2.jpg);
             }
         </style>
     </head>
-    <body style="margin:0; padding: 0;">
+    <body>
         <div id="predecode">
             
         </div>
