@@ -1,9 +1,9 @@
 Uruchomić .psd
+włączyć layer borders i paint flashing
 
 Trochę podstaw:
 Przeglądarka tworzy z CCS i HTML najpierw CSSOM i DOM a z nich tworzy Render Tree.
 Każdy z RenderObject należy do RenderLayer
-https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction?hl=en
 
 
 Tworząc RenderLayer decydujecie o tym w jakiej kolejności elementy mają być "malowane". 

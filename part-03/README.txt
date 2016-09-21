@@ -1,6 +1,10 @@
 Najprostsza klatka animacji. Jak wygląda?
 Wy przesyłacie opis takiej klatki do przeglądarki za pomocą CSS i HTML (chcę kwatrat w kolorze takim ...). 
 Przeglądarka musi to wyświetlić. 
+
+document.querySelector('#character').style.visibility = 'hidden';setTimeout(function(){document.querySelector('#character').style.visibility = 'visible';}, 3000)
+
+
 Zaczyna artysta. Tworzy szkic. Wygląda to tak, że blink 
 1. przelicza style (jakie dokładnie parametry będzie miał element) - (recalculate style)
 2. odświeża drzewo "warstw renderowania" (render layers); na razie możecie o tych warstwach jak o zbiorach elementów, które mają dokładnie taki sam z-index (nawet jeśli go nie podacie);
@@ -13,7 +17,8 @@ Co może utrudnić pracę artyście?
 - ale też ich skomplikowanie (np. box-shadow)
 Dlaczego musimy na niego uważać i pilnować, żeby działał jak najszybciej?
 ....
-Najporściej: blokuje innych. Nie tylko piękne panie. Pracuje w "main thread" a tam mamy do dyspozycji tylko 16ms
+Najporściej: blokuje innych. Nie tylko piękne panie. Pracuje w "main thread" a tam mamy do dyspozycji tylko 16ms.
+Ogólnie jednak raczej ten pan nie sprawia problemów.
 
 Co utrudnia pracę paniom?
 - bardziej skomplikowanie styli niż ich ilość. np. "duuuży box-shadow"
